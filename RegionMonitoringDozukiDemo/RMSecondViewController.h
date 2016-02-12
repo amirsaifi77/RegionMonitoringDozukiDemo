@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+ #import <MapKit/MapKit.h>
 
-@interface RMSecondViewController : UIViewController
+
+
+@interface RMSecondViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+
+
+
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
+
+
+
+- (IBAction)requestButton:(id)sender;
 
 @end

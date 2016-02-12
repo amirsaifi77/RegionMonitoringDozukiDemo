@@ -17,7 +17,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self.mapView setDelegate:self];
+    self.mapView.showsUserLocation = YES;
+    
+    // Zooms and pans following User's GPS Location
+    [self.mapView setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
+
 }
 
 - (void)didReceiveMemoryWarning

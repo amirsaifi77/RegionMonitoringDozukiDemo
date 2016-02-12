@@ -22,6 +22,8 @@
 		84389250191B253200042AB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8438922F191B253200042AB5 /* UIKit.framework */; };
 		84389258191B253200042AB5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84389256191B253200042AB5 /* InfoPlist.strings */; };
 		8438925A191B253200042AB5 /* RegionMonitoringDozukiDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84389259191B253200042AB5 /* RegionMonitoringDozukiDemoTests.m */; };
+		84389266191B255F00042AB5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84389265191B255F00042AB5 /* MapKit.framework */; };
+		84389269191B704E00042AB5 /* RMCustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84389268191B704E00042AB5 /* RMCustomAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		84389255191B253200042AB5 /* RegionMonitoringDozukiDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RegionMonitoringDozukiDemoTests-Info.plist"; sourceTree = "<group>"; };
 		84389257191B253200042AB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84389259191B253200042AB5 /* RegionMonitoringDozukiDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegionMonitoringDozukiDemoTests.m; sourceTree = "<group>"; };
+		84389265191B255F00042AB5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		84389267191B704E00042AB5 /* RMCustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCustomAnnotation.h; sourceTree = "<group>"; };
+		84389268191B704E00042AB5 /* RMCustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCustomAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,7 @@
 			files = (
 				8438922E191B253200042AB5 /* CoreGraphics.framework in Frameworks */,
 				84389230191B253200042AB5 /* UIKit.framework in Frameworks */,
+				84389266191B255F00042AB5 /* MapKit.framework in Frameworks */,
 				8438922C191B253200042AB5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +110,7 @@
 		8438922A191B253200042AB5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84389265191B255F00042AB5 /* MapKit.framework */,
 				8438922B191B253200042AB5 /* Foundation.framework */,
 				8438922D191B253200042AB5 /* CoreGraphics.framework */,
 				8438922F191B253200042AB5 /* UIKit.framework */,
@@ -118,6 +125,8 @@
 				8438923A191B253200042AB5 /* RMAppDelegate.h */,
 				8438923B191B253200042AB5 /* RMAppDelegate.m */,
 				8438923D191B253200042AB5 /* Main.storyboard */,
+				84389267191B704E00042AB5 /* RMCustomAnnotation.h */,
+				84389268191B704E00042AB5 /* RMCustomAnnotation.m */,
 				84389240191B253200042AB5 /* RMFirstViewController.h */,
 				84389241191B253200042AB5 /* RMFirstViewController.m */,
 				84389243191B253200042AB5 /* RMSecondViewController.h */,
@@ -205,6 +214,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Amir Saifi";
 				TargetAttributes = {
+					84389227191B253200042AB5 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					8438924B191B253200042AB5 = {
 						TestTargetID = 84389227191B253200042AB5;
 					};
@@ -256,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84389242191B253200042AB5 /* RMFirstViewController.m in Sources */,
+				84389269191B704E00042AB5 /* RMCustomAnnotation.m in Sources */,
 				84389245191B253200042AB5 /* RMSecondViewController.m in Sources */,
 				84389238191B253200042AB5 /* main.m in Sources */,
 				8438923C191B253200042AB5 /* RMAppDelegate.m in Sources */,
